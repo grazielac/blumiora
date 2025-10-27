@@ -2,8 +2,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import blumiora from '../public/blumiora.png';
-import { BsSearch, BsBell } from 'react-icons/bs';
-import { BsChatDots } from 'react-icons/bs';
+import { BsSearch, BsBell, BsChatDots } from 'react-icons/bs';
 
 
 function NavBar() {
