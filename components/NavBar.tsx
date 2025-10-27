@@ -8,7 +8,6 @@ function NavBar() {
   return (
     <nav className='flex gap-6'>
         <Image src={blumiora} alt="Blumiora logo" width={120} height={100} />
-        <Link href="/" className="text-primary hover:underline">Home</Link>
         <Link href="" className=""></Link>
         <Link href="" className=""></Link>
       
