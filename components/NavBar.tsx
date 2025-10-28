@@ -6,7 +6,7 @@ import { UserButton } from "@clerk/nextjs";
 
 function NavBar() {
   return (
-    <nav className="flex gap-6 items-center justify-between px-6 py-3 border-b border-border bg-white">
+    <nav className="flex gap-6 items-center justify-between px-6 py-3 border-b border-border">
       <div className="flex items-center gap-3">
         <Image
           src={blumiora}
@@ -16,11 +16,11 @@ function NavBar() {
           priority
         />
       </div>
-      <div className="relative flex items-center gap-5 text-gray-700">
-        <BsSearch size={22} className="absolute left-3 top-2.5 text-gray-400 cursor-pointer" />
+      <div className="relative flex items-center gap-5">
+        <BsSearch size={22} className=" text-gray-500 cursor-pointer" />
             {/* <input type="text" placeholder="Search..." className="pl-10 pr-3 py-3 rounded-full border border-border bg-"></input> */}
-        <BsChatDots size={22} className="cursor-pointer" />
-        <BsBell size={22} className="cursor-pointer" />
+        <BsChatDots size={22} className="cursor-pointer text-gray-500" />
+        <BsBell size={22} className="cursor-pointer text-gray-500" />
       </div>
 
       <div className="flex items-center">
