@@ -1,3 +1,5 @@
+import JoinButton from "./JoinButton";
+
 function Hero() {
   return (
     <div className="w-full h-screen flex justify center items-center">
@@ -17,6 +19,9 @@ function Hero() {
             finds its people. Join workshops, share your art, and be inspired by
             others who feel the world the way you do.
           </h3>
+          <div className="flex justify-center mt-6">
+            <JoinButton />
+          </div>
         </div>
       </div>
     </div>
