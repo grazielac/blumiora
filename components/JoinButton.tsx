@@ -3,7 +3,7 @@ import React from 'react'
 function JoinButton() {
   return (
     <div>
-      <button className='bg-primary text-white rounded-full px-4 py-3 hover:bg-amber-600'>Join Blumiora</button>
+      <button className='bg-primary font-bold text-white rounded-full px-4 py-4 hover:bg-accentGray hover:text-text text-sm'>JOIN BLUMIORA</button>
     </div>
   )
 }
