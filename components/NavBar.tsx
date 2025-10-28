@@ -25,7 +25,7 @@ function NavBar() {
       <div className="flex items-center gap-4">
         <SignedOut>
           <SignInButton>
-            <button className="bg-primary !text-white px-4 py-2 rounded-full text-sm sm:text-base">
+            <button className="bg-primary text-white px-4 py-2 rounded-full text-sm sm:text-base">
               Sign In
             </button>
           </SignInButton>

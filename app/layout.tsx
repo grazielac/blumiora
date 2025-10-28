@@ -32,7 +32,7 @@ export default function RootLayout({
       <html lang="en" suppressHydrationWarning>
         <body className={`${cormorant.variable} ${inter.variable} antialiased bg-pagebg min-h-screen`}>
           <NavBar />
-          <Hero />
+          {/* <Hero /> */}
           {children}
         </body>
       </html>
