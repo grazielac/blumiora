@@ -16,7 +16,7 @@ function NavBar() {
       <Image
         src={blumiora}
         alt="Blumiora logo"
-        width={120}
+        width={140}
         height={100}
         priority
       />
@@ -24,13 +24,12 @@ function NavBar() {
       <div className="flex items-center gap-4">
         <SignedOut>
           <SignInButton>
-            <button className="bg-gray-200 px-4 py-2 rounded-full text-sm sm:text-base">
-              {" "}
+            <button className="bg-[#D8CFC4] px-4 py-2 rounded-full text-sm sm:text-base">
               Sign In
             </button>
           </SignInButton>
           <SignUpButton>
-            <button className="bg-accentGray">Sign Up</button>
+            <button className="bg-primary">Sign Up</button>
           </SignUpButton>
         </SignedOut>
 
