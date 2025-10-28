@@ -1,11 +1,4 @@
 import JoinButton from "./JoinButton";
-import {
-  SignInButton,
-  SignUpButton,
-  SignedIn,
-  SignedOut,
-  UserButton,
-} from "@clerk/nextjs";
 
 function Hero() {
   return (
@@ -27,12 +20,8 @@ function Hero() {
             others who feel the world the way you do.
           </h3>
           <div className="flex justify-center mt-6">
-            <SignedOut>
-              <SignUpButton>
-                <JoinButton />
-                {/* <button className="shadow-md font-medium tracking-wider px-4 py-2 rounded-full text-white  hover:bg-accentGray hover:text-text text-sm bg-primary">SIGN UP</button> */}
-              </SignUpButton>
-            </SignedOut>
+            <JoinButton />
+            {/* <button className="shadow-md font-medium tracking-wider px-4 py-2 rounded-full text-white  hover:bg-accentGray hover:text-text text-sm bg-primary">SIGN UP</button> */}
           </div>
         </div>
       </div>
