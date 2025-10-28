@@ -1,25 +1,38 @@
 @import "tailwindcss";
 
-:root {
-       --color-primary: #6A2E35;
-        --color-accentGray: #D8CFC4;
-        --color-accentApricot: #f5e9d3;
-        --color-pagebg: #FDFCF8;
-        --color-card: #FFFFFF;
-        --color-text: #333333;
-        --color-text2: #7d7d7d;
-        --color-border: #e3e2df;
-        --color-alert: #F26868;
-      
+@theme {
+  --color-primary: #6a2e35;
+  --color-accentGray: #d8cfc4;
+  --color-accentApricot: #f5e9d3;
+  --color-pagebg: #fdfcf8;
+  --color-card: #ffffff;
+  --color-text: #333333;
+  --color-text2: #7d7d7d;
+  --color-border: #e3e2df;
+  --color-alert: #f26868;
 }
+
+/* @theme {
+  --color-primary: var(--color-primary);
+  --color-accent-gray: var(--color-accentGray);
+  --color-accent-apricot: var(--color-accentApricot);
+  --color-pagebg: var(--color-pagebg);
+  --color-card: var(--color-card);
+  --color-text: var(--color-text);
+  --color-text2: var(--color-text2);
+  --color-border: var(--color-border);
+  --color-alert: var(--color-alert);
+
+  --font-family-primary: var(--font-cormorant-garamond);
+  --font-family-secondary: var(--font-inter);
+} */
 
 body {
-    padding: 1rem;
-    /* background-color: #FDFCF8; */
- 
-
+  padding: 1rem;
+  background-color: var(--color-pagebg);
 }
 
-html, body {
-    height: 100%;
+html,
+body {
+  height: 100%;
 }

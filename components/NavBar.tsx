@@ -19,6 +19,7 @@ function NavBar() {
         width={140}
         height={100}
         priority
+        className="w-32 h-auto"
       />
       {/* left side */}
       <div className="flex items-center gap-4">
@@ -40,7 +41,9 @@ function NavBar() {
             <BsChatDots size={22} className="cursor-pointer text-gray-500" />
             <BsBell size={22} className="cursor-pointer text-gray-500" />
           </nav>
-          <UserButton />
+          <div className="w-6 h-6">
+            <UserButton />
+          </div>
         </SignedIn>
       </div>
     </header>
