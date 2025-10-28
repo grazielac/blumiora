@@ -36,3 +36,14 @@ html,
 body {
   height: 100%;
 }
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-cormorant-garamond);
+}
+
+p {
+  font-family: var(--font-inter);
+}
