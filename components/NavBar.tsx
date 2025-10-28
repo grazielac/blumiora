@@ -26,7 +26,7 @@ function NavBar() {
         <SignedOut>
           <SignInButton>
             <button className=" font-medium tracking-wider px-4 py-2 rounded-full  hover:bg-accentGray hover:text-text text-sm">
-              SIGN IN
+              LOG IN
             </button>
           </SignInButton>
           <SignUpButton>
