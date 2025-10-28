@@ -25,12 +25,12 @@ function NavBar() {
       <div className="flex items-center gap-4">
         <SignedOut>
           <SignInButton>
-            <button className="font-medium tracking-wider px-4 py-2 rounded-full  hover:bg-accentGray hover:text-text text-sm">
+            <button className=" font-medium tracking-wider px-4 py-2 rounded-full  hover:bg-accentGray hover:text-text text-sm">
               SIGN IN
             </button>
           </SignInButton>
           <SignUpButton>
-            <button className="font-medium tracking-wider px-4 py-2 rounded-full text-white  hover:bg-accentGray hover:text-text text-sm bg-primary">SIGN UP</button>
+            <button className="shadow-md font-medium tracking-wider px-4 py-2 rounded-full text-white  hover:bg-accentGray hover:text-text text-sm bg-primary">SIGN UP</button>
           </SignUpButton>
         </SignedOut>
 
