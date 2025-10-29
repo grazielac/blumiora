@@ -7,7 +7,7 @@ function Hero() {
         <div className="w-full max-w-3xl p-10 flex flex-col gap-6">
           {/* heading */}
           <div className="flex justify-center items-center pb-3">
-            <h1 className="font-heading text-4xl font-bold text-center">
+            <h1 className="font-heading text-4xl  text-center italic">
               For the ones who create, feel and inspire.
             </h1>
           </div>
