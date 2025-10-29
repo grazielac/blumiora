@@ -3,6 +3,7 @@ import { SignedOut } from "@clerk/nextjs";
 import Hero from "../components/Hero";
 import FeaturedCreativesCard from "@/components/FeaturedCreatorsCard";
 import { posts } from "@/data/posts";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -36,6 +37,7 @@ export default function Home() {
           </main>
         </section>
       </SignedOut>
+      <Footer />
     </>
   );
 }

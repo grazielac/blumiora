@@ -19,7 +19,7 @@ function FeaturedCreativesCard({ image }: FeaturedCreativesCardProps) {
           <div className="w-full p-5 pb-6">
             <Image src={image} alt="title" className="rounded-lg" />
           </div>
-          <div className="flex justify-center item text-center">
+          <div className="flex justify-center item text-center mb-5">
             <div>
               <h2>HELLO TITLE</h2>
               {/* <h2 className={`${cormorant.className`} pt-10 text-2xl text-center font-semibold mb-2`}>{title}</h2> */}
