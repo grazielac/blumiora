@@ -17,7 +17,7 @@ export default function Home() {
         {/* section title */}
         <section className="px-4 py-8">
           <div className="flex justify-between items-center">
-            <h2 className="text-3xl font-bold mb-8">FEATURED CREATIVES</h2>
+            <h2 className="text-3xl font-bold mb-8">Featured Creatives</h2>
             <div className="mr-12 px-3 py-1 font-bold rounded-3xl hover:bg-accentGray">
               <h3 className="text-xl font-light">More creatives</h3>
             </div>
@@ -42,7 +42,7 @@ export default function Home() {
         {/* upcoming events */}
         <section className="px-4 py-8">
           <div className="flex justify-between items-center">
-            <h2 className="text-3xl font-bold mb-8">Upcoming events</h2>
+            <h2 className="text-3xl font-bold mb-8">Upcoming Events</h2>
             <div className="mr-12 px-3 py-1 font-bold rounded-3xl hover:bg-accentGray">
               <h3 className="text-xl font-light">More events</h3>
             </div>
