@@ -5,7 +5,8 @@ import FeaturedCreativesCard from "@/components/FeaturedCreatorsCard";
 import { posts } from "@/data/posts";
 import Footer from "@/components/Footer";
 import { events } from "@/data/events";
-import  UpcomingEvents from "../components/UpcomingEvents";
+import UpcomingEvents from "../components/UpcomingEvents";
+import SwiperComponent from "@/components/Swiper";
 
 export default function Home() {
   return (
@@ -22,11 +23,18 @@ export default function Home() {
               <h3 className="text-xl font-light">More creatives</h3>
             </div>
           </div>
-          <main
+
+          {/* mobile view */}
+          <div className="block sm:hidden">
+            <SwiperComponent />
+          </div>
+
+          {/* <main
             className="bg-primary grid grid-cols-1 sm:grid-cols-2
                        lg:grid-cols-3 xl:grid-cols-4 gap-6 p-5
                        sm:grid-rows-2"
-          >
+          > */}
+          <div className="hidden sm:grid grid-cols-2 lg:grid-cols-4 gap-6 p-5">
             {posts.map((post) => (
               <FeaturedCreativesCard
                 key={post.slug}
@@ -36,7 +44,7 @@ export default function Home() {
                 slug={post.slug}
               />
             ))}
-          </main>
+          </div>
         </section>
 
         {/* upcoming events */}
