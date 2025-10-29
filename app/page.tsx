@@ -4,8 +4,8 @@ import Hero from "../components/Hero";
 import FeaturedCreativesCard from "@/components/FeaturedCreatorsCard";
 import { posts } from "@/data/posts";
 import Footer from "@/components/Footer";
-import UpcomingEvents from "@/components/UpcomingEvents";
 import { events } from "@/data/events";
+import  UpcomingEvents from "../components/UpcomingEvents";
 
 export default function Home() {
   return (
@@ -59,6 +59,7 @@ export default function Home() {
                 image={event.image}
                 username={event.username}
                 slug={event.slug}
+                date={event.date}
               />
             ))}
           </main>

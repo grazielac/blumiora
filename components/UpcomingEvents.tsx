@@ -15,6 +15,7 @@ function UpcomingEvents({
   date,
   title,
   username,
+  slug
 
 }: UpcomingEventsProps) {
   return (
