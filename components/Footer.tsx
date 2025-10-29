@@ -2,17 +2,16 @@ import React from "react";
 import blumiora from "../public/blumiora.png";
 import Image from "next/image";
 import Link from "next/link";
-import { FaInstagram } from 'react-icons/fa';
-import { FaFacebookF } from 'react-icons/fa';
-import { FaTiktok } from 'react-icons/fa';
-import { FaTwitter } from 'react-icons/fa';
-import { FaPinterest } from 'react-icons/fa';
+import { FaInstagram } from "react-icons/fa";
+import { FaFacebookF } from "react-icons/fa";
+import { FaTiktok } from "react-icons/fa";
+import { FaPinterest } from "react-icons/fa";
 
 function Footer() {
   return (
     <>
-      <div className="bg-accentApricot ">
-        <div className="w-full h-1/2  flex p-15 justify-between ">
+      <div className="bg-accentApricot">
+        <div className="w-full h-1/2  flex py-16 px-10 justify-between flex-col sm:flex-row">
           <div className="">
             <Image
               src={blumiora}
@@ -23,7 +22,7 @@ function Footer() {
               className="w-28 h-auto"
             />
           </div>
-          <div className="flex gap-4 justify-around w-4/6">
+          <div className="flex gap-4 justify-around w-4/6 flex-col sm:flex-row sm:pt-10">
             <div>
               <h3 className="text-xl font-semibold">Explore</h3>
               <div className="pt-6">
@@ -128,13 +127,15 @@ function Footer() {
           </div>
         </div>
 
-        <div className="flex py-10 px-10 items-center">
+        <div className="flex flex-col justify-center gap-6 border-t border-border sm:flex-row py-10 px-10 items-center">
           <div>
-            <p className="text-sm">2025 BLUMIORA. All right reserved.</p>
+            <p className="text-sm">
+              © {new Date().getFullYear()} BLUMIORA. All right reserved.
+            </p>
           </div>
 
-          <div className="pl-20 flex w-3/6">
-            <ul className="flex w-full justify-around">
+          <div className="flex text-center">
+            <ul className="w-full">
               <li>
                 <Link
                   href="/"
@@ -163,8 +164,10 @@ function Footer() {
           </div>
 
           {/* icons */}
-          <div className="flex w-1/4 justify-around text-primary">
+          <div className="flex w-full justify-center gap-6 sm:w-1/2 sm:justify-around md:w-1/3 lg:w-1/4  text-primary">
+            <a>
             <FaTiktok size={24} />
+            </a>
             <FaInstagram size={24} />
             <FaPinterest size={24} />
             <FaFacebookF size={24} />
