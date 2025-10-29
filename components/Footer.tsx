@@ -11,8 +11,8 @@ function Footer() {
   return (
     <>
       <div className="bg-accentApricot">
-        <div className="w-full h-1/2  flex py-16 px-10 justify-between flex-col sm:flex-row">
-          <div className="">
+        <div className="w-full h-1/2 flex py-16 px-10 justify-between flex-col sm:flex-row">
+          <div>
             <Image
               src={blumiora}
               alt="Blumiora logo"
@@ -22,10 +22,10 @@ function Footer() {
               className="w-28 h-auto"
             />
           </div>
-          <div className="flex gap-4 justify-around w-4/6 flex-col sm:flex-row sm:pt-10">
+          <div className="mt-4 gap-4 grid grid-cols-2 w-4/6 flex-col sm:grid-col-3 lg:grid-cols-4 pt-10">
             <div>
-              <h3 className="text-xl font-semibold">Explore</h3>
-              <div className="pt-6">
+              <h3 className="text-primary text-xl font-semibold">Explore</h3>
+              <div className="pt-4">
                 <ul className="space-y-2">
                   <li>
                     <Link
@@ -71,8 +71,8 @@ function Footer() {
               </div>
             </div>
             <div>
-              <h3 className="text-xl font-semibold">Resources</h3>
-              <div className="pt-6">
+              <h3 className="text-primary text-xl font-semibold">Resources</h3>
+              <div className="pt-4">
                 <ul className="space-y-2">
                   <li>
                     <Link
@@ -102,8 +102,8 @@ function Footer() {
               </div>
             </div>
             <div>
-              <h3 className="text-xl font-semibold">About</h3>
-              <div className="pt-6">
+              <h3 className="text-primary text-xl font-semibold">About</h3>
+              <div className="pt-4">
                 <ul className="space-y-2">
                   <li>
                     <Link
@@ -127,15 +127,15 @@ function Footer() {
           </div>
         </div>
 
-        <div className="flex flex-col justify-center gap-6 border-t border-border sm:flex-row py-10 px-10 items-center">
+        <div className="flex flex-col justify-around gap-6 border-t border-border sm:flex-row py-10 px-10 items-center">
           <div>
             <p className="text-sm">
               © {new Date().getFullYear()} BLUMIORA. All right reserved.
             </p>
           </div>
 
-          <div className="flex text-center">
-            <ul className="w-full">
+          <div className="flex text-center mb-4">
+            <ul className="flex flex-col sm:flex-row gap-4 sm:gap-2">
               <li>
                 <Link
                   href="/"

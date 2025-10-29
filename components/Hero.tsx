@@ -1,3 +1,4 @@
+import { SignedOut } from "@clerk/nextjs";
 import JoinButton from "./JoinButton";
 
 function Hero() {
@@ -21,6 +22,7 @@ function Hero() {
           </h3>
           <div className="flex justify-center mt-6">
             <JoinButton />
+
             {/* <button className="shadow-md font-medium tracking-wider px-4 py-2 rounded-full text-white  hover:bg-accentGray hover:text-text text-sm bg-primary">SIGN UP</button> */}
           </div>
         </div>

@@ -12,7 +12,7 @@ import {
 
 function NavBar() {
   return (
-    <header className="flex items-center justify-between p-4 h-16">
+    <header className="flex items-center justify-between p-10 h-16">
       <Image
         src={blumiora}
         alt="Blumiora logo"
