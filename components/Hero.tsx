@@ -13,7 +13,7 @@ function Hero() {
           </div>
 
           {/* subheading */}
-          <h3 className="font-body text-center text-text text-xl leading-relaxed">
+          <h3 className="font-body text-center text-xl leading-relaxed">
             A space for creatives to connect, grow, and bloom. Whether you
             paint, design, write, or simply dream — Blumiora is where creativity
             finds its people. Join workshops, share your art, and be inspired by
