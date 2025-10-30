@@ -13,9 +13,8 @@ import { redirect } from "next/navigation";
 export default function Home() {
   return (
     <>
-      <SignedIn>
-        {redirect("/dashboard")}
-      </SignedIn>
+     
+      
       <SignedOut>
         <NavBar />
         <Hero />
