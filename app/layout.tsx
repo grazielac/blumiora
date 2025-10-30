@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Cormorant_Garamond, Inter } from "next/font/google";
 import "./globals.css";
 import { ClerkProvider } from "@clerk/nextjs";
+import Footer from "@/components/Footer";
 
 const cormorant = Cormorant_Garamond({
   variable: "--font-cormorant-garamond",
@@ -31,6 +32,7 @@ export default function RootLayout({
         <body className={`${cormorant.variable} ${inter.variable} antialiased bg-pagebg min-h-screen`}>
           
           {children}
+          <Footer />
         </body>
       </html>
     </ClerkProvider>

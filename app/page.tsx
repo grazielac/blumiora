@@ -1,20 +1,30 @@
 // import NavBar from "@/components/NavBar";
-import { SignedIn, SignedOut } from "@clerk/nextjs";
+import { ClerkLoading, SignedIn, SignedOut } from "@clerk/nextjs";
 import Hero from "../components/Hero";
 import FeaturedCreativesCard from "@/components/FeaturedCreatorsCard";
 import { posts } from "@/data/posts";
-import Footer from "@/components/Footer";
 import { events } from "@/data/events";
 import UpcomingEvents from "../components/UpcomingEvents";
 import SwiperComponent from "@/components/Swiper";
 import NavBar from "@/components/NavBar";
-import { redirect } from "next/navigation";
+import { ClerkLoaded } from "@clerk/nextjs";
+import DashboardNav from "@/components/DashboardNav";
 
 export default function Home() {
   return (
     <>
-     
-      
+      <ClerkLoading>
+        <p className="text-xl">Loading</p>
+      </ClerkLoading>
+
+      {/* content for logged-in users */}
+      <ClerkLoaded>
+        <SignedIn>
+          <DashboardNav />
+        </SignedIn>
+      </ClerkLoaded>
+
+      {/* content for logged-out users */}
       <SignedOut>
         <NavBar />
         <Hero />
@@ -72,7 +82,6 @@ export default function Home() {
           </main>
         </section>
       </SignedOut>
-      <Footer />
     </>
   );
 }

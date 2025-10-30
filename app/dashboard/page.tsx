@@ -1,12 +1,13 @@
 
-
 function Dashboard() {
   return (
-    <div>
+    <>
       <h1 className="text-2xl font-bold">Dashboard</h1>
-        {/* dahsboard content here */}
-    </div>
-  )
+      {/* dashboard content here */}
+      <p>HELLO !!!!</p>
+      <p>jhsdjsghja</p>
+    </>
+  );
 }
 
-export default Dashboard
+export default Dashboard;
