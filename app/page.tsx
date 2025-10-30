@@ -1,5 +1,5 @@
 // import NavBar from "@/components/NavBar";
-import { SignedOut } from "@clerk/nextjs";
+import { SignedIn, SignedOut } from "@clerk/nextjs";
 import Hero from "../components/Hero";
 import FeaturedCreativesCard from "@/components/FeaturedCreatorsCard";
 import { posts } from "@/data/posts";
@@ -8,10 +8,14 @@ import { events } from "@/data/events";
 import UpcomingEvents from "../components/UpcomingEvents";
 import SwiperComponent from "@/components/Swiper";
 import NavBar from "@/components/NavBar";
+import { redirect } from "next/navigation";
 
 export default function Home() {
   return (
     <>
+      <SignedIn>
+        {redirect("/dashboard")}
+      </SignedIn>
       <SignedOut>
         <NavBar />
         <Hero />
