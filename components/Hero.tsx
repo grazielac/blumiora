@@ -1,4 +1,3 @@
-import { SignedOut } from "@clerk/nextjs";
 import JoinButton from "./JoinButton";
 
 function Hero() {

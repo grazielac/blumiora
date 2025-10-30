@@ -7,12 +7,13 @@ import Footer from "@/components/Footer";
 import { events } from "@/data/events";
 import UpcomingEvents from "../components/UpcomingEvents";
 import SwiperComponent from "@/components/Swiper";
+import NavBar from "@/components/NavBar";
 
 export default function Home() {
   return (
     <>
-      {/* <NavBar /> */}
       <SignedOut>
+        <NavBar />
         <Hero />
 
         {/* section title */}
@@ -29,11 +30,6 @@ export default function Home() {
             <SwiperComponent />
           </div>
 
-          {/* <main
-            className="bg-primary grid grid-cols-1 sm:grid-cols-2
-                       lg:grid-cols-3 xl:grid-cols-4 gap-6 p-5
-                       sm:grid-rows-2"
-          > */}
           <div className="hidden sm:grid grid-cols-2 lg:grid-cols-4 gap-6 p-5">
             {posts.map((post) => (
               <FeaturedCreativesCard

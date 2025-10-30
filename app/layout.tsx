@@ -2,8 +2,6 @@ import type { Metadata } from "next";
 import { Cormorant_Garamond, Inter } from "next/font/google";
 import "./globals.css";
 import { ClerkProvider } from "@clerk/nextjs";
-import NavBar from "../components/NavBar";
-import Hero from "@/components/Hero";
 
 const cormorant = Cormorant_Garamond({
   variable: "--font-cormorant-garamond",
@@ -31,8 +29,7 @@ export default function RootLayout({
     <ClerkProvider>
       <html lang="en" suppressHydrationWarning>
         <body className={`${cormorant.variable} ${inter.variable} antialiased bg-pagebg min-h-screen`}>
-          <NavBar />
-          {/* <Hero /> */}
+          
           {children}
         </body>
       </html>
