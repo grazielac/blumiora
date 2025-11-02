@@ -10,6 +10,7 @@ import NavBar from "@/components/NavBar";
 import { ClerkLoaded } from "@clerk/nextjs";
 import DashboardNav from "@/components/DashboardNav";
 
+
 export default function Home() {
   return (
     <>
@@ -21,6 +22,7 @@ export default function Home() {
       <ClerkLoaded>
         <SignedIn>
           <DashboardNav />
+        
         </SignedIn>
       </ClerkLoaded>
 
@@ -28,6 +30,7 @@ export default function Home() {
       <SignedOut>
         <NavBar />
         <Hero />
+
 
         {/* section title */}
         <section className="px-4 py-8">
@@ -82,6 +85,10 @@ export default function Home() {
           </main>
         </section>
       </SignedOut>
+      
     </>
+     
   );
+  console.log("Sign in URL:", process.env.NEXT_PUBLIC_CLERK_SIGN_IN_FALLBACK_REDIRECT_URL);
+
 }
