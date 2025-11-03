@@ -1,12 +1,16 @@
 "use client";
-import React, { use } from "react";
+import { TextField, Button, Container, Box } from "@mui/material";
 import { useState } from "react";
 
 function CreateProfile() {
+  const handleSubmit = (e) => {
+    e.preventDefault();
+  };
+
   const [step, setStep] = useState(1);
 
   return (
-    <div className="min-h-screen bg-amber-100 flex justify-center items-center p-4">
+    <div className="min-h-screen bg-amber-50 flex justify-center items-center p-4">
       <div className="w-full max-w-2xl bg-card rounded-lg shadow-sm border border:bg-gray-300 p-8">
         {/* header */}
         <div className="text-center mb-8">
@@ -64,10 +68,41 @@ function CreateProfile() {
               <h2 className="text-xl font-bold">Basic Information</h2>
 
               <div className="grid grid-cols-2 gap-4">
-                <div>
-                    <label>First Name</label>
-                </div>
+                <Container sx={{ display: "flex", flexDirection: "column", gap: 6 }}>
+                  <Box component="form" onSubmit={handleSubmit}>
+                    <div className="w-full flex justify-between ">
+                      <div>
+                        <h2 className="text-xl">First Name</h2>
+                        <TextField label="Required" name="username" required className="" />
+                      </div>
 
+                      <div>
+                        <h2 className="text-xl">Last Name</h2>
+                        <TextField fullWidth
+                          label="Optional"
+                          name="lastname"
+                          //   multiline
+                          //   rows={4}
+                          //   required
+                        />
+                      </div>
+                    </div>
+
+                    <div>
+                      <h2 className="text-xl">Email Address</h2>
+                      <TextField
+                        label="Email"
+                        name="email"
+                        type="email"
+                        required
+                      />
+                    </div>
+
+                    <Button type="submit" variant="contained" color="primary">
+                      Continue
+                    </Button>
+                  </Box>
+                </Container>
               </div>
             </>
           )}
