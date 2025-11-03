@@ -6,15 +6,15 @@ function CreatePost() {
   const [title, setTitle] = useState("");
   const [content, setContent] = useState("");
 
-  function handleTitleChange(e) {
+  function handleTitleChange(e : React.FormEvent<HTMLFormElement>) {
     setTitle(e.target.value);
   }
 
-  function handleContentChange(e) {
+  function handleContentChange(e: React.FormEvent<HTMLFormElement>) {
     setContent(e.target.value);
   }
 
-  function handleSubmit(e) {
+  function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
   }
 
