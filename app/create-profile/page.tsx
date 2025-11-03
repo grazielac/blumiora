@@ -3,7 +3,7 @@ import { TextField, Button, Container, Box } from "@mui/material";
 import { useState } from "react";
 
 function CreateProfile() {
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
   };
 
