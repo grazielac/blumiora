@@ -6,13 +6,13 @@ function CreatePost() {
   const [title, setTitle] = useState("");
   const [content, setContent] = useState("");
 
-  function handleTitleChange(e : React.FormEvent<HTMLFormElement>) {
+  function handleTitleChange(e: React.ChangeEvent<HTMLFormElement>) {
     setTitle(e.target.value);
   }
 
-  function handleContentChange(e: React.FormEvent<HTMLFormElement>) {
-    setContent(e.target.value);
-  }
+  // function handleContentChange(e: React.ChangeEvent<HTMLFormElement>) {
+  //   setContent(e.target.value);
+  // }
 
   function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
@@ -20,7 +20,7 @@ function CreatePost() {
 
   return (
     <>
-      <form>
+      <form onSubmit={handleSubmit}>
         <div className="flex justify-between">
           <h1 className="text-3xl font-bold">Create Post</h1>
           <button>Close x</button>
@@ -34,8 +34,6 @@ function CreatePost() {
             <input
               type="text"
               value={title}
-              onChange={handleTitleChange}
-              onSubmit={handleSubmit}
               placeholder="Title here"
               className="border w-1/2 h-10 rounded-2xl"
             ></input>
@@ -49,8 +47,7 @@ function CreatePost() {
             <input
               type="text"
               value={content}
-              onChange={handleContentChange}
-              onSubmit={handleSubmit}
+              onChange={(e) => setContent(e.target.value)}
               placeholder="Content here"
               className="border w-1/2 h-20 rounded-2xl"
             ></input>
